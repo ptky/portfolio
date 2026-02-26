@@ -1,17 +1,82 @@
+
 body {
     max-width: 800px;
     margin: auto;
     margin-top: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-image: url("kepek/background.jpg");
+    background-size: 100%;
+    color: white;
 }
 
-main {
+nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main,nav {
+    
     border-radius: 10%;
-}
-article {
-    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: rgba(249, 241, 241, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(249, 241, 241, 0.89);
 }
 
-aside {
-    background-color: white;
+
+.sajat_button {
+    margin: 10px ;
+  --green: #1986df;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(
+    to right,
+    rgba(243, 78, 22, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(243, 78, 22, 0.1) 100%
+  );
+  color: #ffffff;
+  box-shadow:
+    inset 0 0 10px rgba(22, 173, 243, 0.4),
+    0 0 9px 3px rgba(243, 78, 22, 0.1);
+}
+
+button:hover {
+  color: #ffffff; 
+  box-shadow:
+    inset 0 0 10px rgba(22, 228, 243, 0.6),
+    0 0 9px 3px rgba(22, 92, 243, 0.2);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 0.4s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(22, 144, 243, 0.1) 40%,
+    rgba(22, 136, 243, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+button:hover:before {
+  transform: translateX(15em);
 }
